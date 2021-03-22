@@ -9,10 +9,12 @@
 </head>
 </head>
 <body>
-<h1 align="center">Shaik Jahangir. Poll SCM testing...</h1>
-<h1 align="center"> Assalamu Alaikum.....I am updating the home.jsp file which has a content which is being shown on the page after we deploy this code to Tomcat server.
+<h1 align="center">Shaik Jahangir. GitHub Webhook - Testing</h1>
+<h1 align="align text left"> Assalamu Alaikum.....I have used GitHub Webhook in Build Trigger... </h1>
+	I am updating the home.jsp file which has a content which is being shown on the page after we deploy this code to Tomcat server.
 	I am just replacing the content of the Mithun Technologies file to check weather the build will trigger automatically or not after commiting this changes.
-	I have used Poll SCM in Build Trigger.</h1>
+	</h1>
+<h1 align="center">Successfully triggered the job using GitHub Webhook.</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
