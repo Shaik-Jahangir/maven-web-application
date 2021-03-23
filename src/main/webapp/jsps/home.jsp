@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Shaik Jahangir. GitHub Webhook - Testing</h1>
-<h1 align="align text left"> Assalamu Alaikum.....2nd time committed..I have used GitHub Webhook in Build Trigger... </h1>
+<h1 align="align text left"> Assalamu Alaikum.....committed on 23rd ..I have used GitHub Webhook in Build Trigger... </h1>
 	I am updating the home.jsp file which has a content which is being shown on the page after we deploy this code to Tomcat server.
 	I am just replacing the content of the Mithun Technologies file to check weather the build will trigger automatically or not after commiting this changes.
 	</h1>
