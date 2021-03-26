@@ -1,0 +1,45 @@
+node
+{
+
+def mavenHome = tool name: "maven3.6.3"
+
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
+
+stage('GetGitHubCode')
+{
+git branch: 'development', credentialsId: 'f4e13abd-6a83-4f57-9943-725ea06eb3dc', url: 'https://github.com/Shaik-Jahangir/maven-web-application.git'
+}
+
+stage('BuildPackage')
+{
+sh "${mavenHome}/bin/mvn clean package"
+}
+
+stage('ExecuteSQreport')
+{
+sh "${mavenHome}/bin/mvn sonar:sonar"
+}
+
+stage('UploadArtifactToNexus')
+{
+sh "${mavenHome}/bin/mvn deploy"
+}
+
+stage('DeployToTomcat')
+{
+sshagent(['9f9723e6-8a24-45ab-a01f-b547b1df9e1a']) {
+    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.235.19.127:/opt/apache-tomcat-9.0.44/webapps/"
+
+}
+}
+
+stage('SendEmail')
+{
+emailext body: '''Build Triggered using Pipeline Project type.
+
+
+regards,
+Shaik Jahangir''', subject: 'Pipeline Build Triggered', to: 'jahangir.shaik29@gmail.com'
+}
+
+}
