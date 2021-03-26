@@ -34,7 +34,7 @@ sshagent(['9f9723e6-8a24-45ab-a01f-b547b1df9e1a']) {
 
 }
 }
-
+/*
 stage('SendEmail')
 {
 emailext body: '''Build Triggered using Pipeline Project type.
@@ -43,5 +43,5 @@ emailext body: '''Build Triggered using Pipeline Project type.
 regards,
 Shaik Jahangir''', subject: 'Pipeline Build Triggered', to: 'jahangir.shaik29@gmail.com'
 }
-
+*/
 }
