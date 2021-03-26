@@ -9,12 +9,12 @@ P<%@ page language="java" contentType="text/html; charset=UTF-8"
 </head>
 </head>
 <body>
-<h1 align="center">Shaik Jahangir. PipeLine Project type -- Scripted way</h1>
-<h1 align="align text left"> Assalamu Alaikum........Testing in Pipeline projecType, copied the script to the created JahangirJenkinsfile.. </h1>
+<h1 align="center">Shaik Jahangir. PipeLine Project type -- Declarative way</h1>
+<h1 align="align text left"> Assalamu Alaikum........Testing in Pipeline projecType... </h1>
 	I am updating the home.jsp file which has a content which is being shown on the page after we deploy this code to Tomcat server.
 	I am just replacing the content of the Mithun Technologies file to check weather the application will be deployed or not after triggering the build.
 	</h1>
-<h1 align="center">Successfully deployed to Tomcat using Pipeline Project Type using Scripted Way.</h1>
+<h1 align="center">Successfully deployed to Tomcat using Pipeline Project Type using Declarative Way.</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
