@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+P<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -9,12 +9,12 @@
 </head>
 </head>
 <body>
-<h1 align="center">Shaik Jahangir. GitHub Webhook - Testing</h1>
-<h1 align="align text left"> Assalamu Alaikum.....committed on 23rd ..I have used GitHub Webhook in Build Trigger... </h1>
+<h1 align="center">Shaik Jahangir. PipeLine Project type -- Scripted way</h1>
+<h1 align="align text left"> Assalamu Alaikum.......... </h1>
 	I am updating the home.jsp file which has a content which is being shown on the page after we deploy this code to Tomcat server.
-	I am just replacing the content of the Mithun Technologies file to check weather the build will trigger automatically or not after commiting this changes.
+	I am just replacing the content of the Mithun Technologies file to check weather the application will be deployed or not after triggering the build.
 	</h1>
-<h1 align="center">Successfully triggered the job using GitHub Webhook.</h1>
+<h1 align="center">Successfully deployed to Tomcat using Pipeline Project Type using Scripted Way.</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
