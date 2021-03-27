@@ -17,6 +17,7 @@ stage('BuildPackage')
 sh "${mavenHome}/bin/mvn clean package"
 }
 
+/*
 stage('ExecuteSQreport')
 {
 sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -43,5 +44,5 @@ emailext body: '''Build Triggered using Pipeline Project type.
 regards,
 Shaik Jahangir''', subject: 'Pipeline Build Triggered', to: 'jahangir.shaik29@gmail.com'
 }
-
+*/
 }
