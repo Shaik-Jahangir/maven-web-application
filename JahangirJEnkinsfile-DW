@@ -1,6 +1,8 @@
 pipeline{
 
-agent any;
+agent{
+label'nodes'
+}
 
 tools{
 maven 'maven3.6.3'
@@ -20,6 +22,7 @@ stages{
 		sh "mvn clean package"
 		}
 	  }
+	  /*
 	  stage('ExecuteSQreport'){
 	    steps{
 		sh "mvn sonar:sonar"
@@ -38,7 +41,7 @@ stages{
 	  }
 
       }
-      
+      */
 
 }
 
